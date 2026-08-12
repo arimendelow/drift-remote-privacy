@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drift Remote Privacy</title>
+  <style>
+    :root { color-scheme: dark; background: #07080b; color: #f5f6f2; font-family: ui-rounded, -apple-system, BlinkMacSystemFont, "SF Pro Rounded", sans-serif; }
+    body { margin: 0; background: linear-gradient(145deg, #0d1017, #07080b 55%); min-height: 100vh; }
+    main { box-sizing: border-box; width: min(720px, 100%); margin: 0 auto; padding: 72px 24px 96px; }
+    h1 { font-size: clamp(36px, 8vw, 64px); line-height: 1; letter-spacing: -0.045em; margin: 0 0 16px; }
+    h2 { font-size: 20px; margin: 36px 0 8px; }
+    p, li { color: #a7acb8; line-height: 1.65; font-size: 16px; }
+    strong, a { color: #f5f6f2; }
+    a { text-decoration-color: #7d8dff; text-underline-offset: 4px; }
+    .date { color: #7d8dff; font-weight: 600; }
+    .card { margin-top: 36px; padding: 24px; border-radius: 24px; background: #12151c; border: 1px solid rgba(255,255,255,.12); }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="date">Effective August 12, 2026</p>
+    <h1>Drift Remote Privacy</h1>
+    <p>Drift is a simple Bluetooth remote. Privacy is part of that simplicity.</p>
+
+    <div class="card">
+      <strong>The Drift app does not collect, store off-device, transmit, sell, or share personal data.</strong>
+      <p>Drift has no accounts, analytics, advertising, tracking, app-operated backend, or third-party SDKs.</p>
+    </div>
+
+    <h2>Bluetooth</h2>
+    <p>Bluetooth is used locally only to make the controller appear as an input device to another device you choose. Drift cannot read content or activity from that target.</p>
+
+    <h2>On-device preferences</h2>
+    <p>Drift stores onboarding completion, selected target type, whether this installation has ever connected to a target, and your compatibility-result choices on this device. The connection flag is used only to choose first-pair versus reconnect guidance. Deleting Drift deletes these preferences.</p>
+
+    <h2>Voluntary beta feedback</h2>
+    <p>If you send TestFlight feedback or email, Apple or your email provider transmits that message to the developer outside the Drift app. It may contain details you choose to provide, including controller and target model, OS version, video app, adapter and TV, control results, reconnect behavior, screenshots, contact address, and message content.</p>
+    <p>Only the developer can access this feedback. It is used solely to diagnose Drift and assess compatibility, retained only as long as needed for that purpose, then deleted. You may request deletion at <a href="mailto:ari@mendelow.me">ari@mendelow.me</a>.</p>
+    <p>TestFlight and its feedback transport are provided by Apple and subject to <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>. Email is subject to your and the developer’s email providers.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy questions or feedback-deletion requests, email <a href="mailto:ari@mendelow.me">ari@mendelow.me</a>.</p>
+  </main>
+</body>
+</html>
