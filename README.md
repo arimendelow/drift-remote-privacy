@@ -1,5 +1,6 @@
-# Drift Remote privacy
+# Drift Remote privacy and support
 
-This repository publishes the privacy policy for the Drift Remote iPhone and iPad app.
+This repository publishes the privacy policy and support page for the Drift Remote iPhone and iPad app.
 
-The policy is available at <https://arimendelow.github.io/drift-remote-privacy/>.
+- Privacy: <https://arimendelow.github.io/drift-remote-privacy/>, a copy of `PrivacySite/index.html` in arimendelow/drift-remote.
+- Support: <https://arimendelow.github.io/drift-remote-privacy/support/>

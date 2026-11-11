@@ -19,24 +19,30 @@
 </head>
 <body>
   <main>
-    <p class="date">Effective August 12, 2026</p>
+    <p class="date">Effective August 16, 2026</p>
     <h1>Drift Remote Privacy</h1>
     <p>Drift is a simple Bluetooth remote. Privacy is part of that simplicity.</p>
 
     <div class="card">
-      <strong>The Drift app does not collect, store off-device, transmit, sell, or share personal data.</strong>
-      <p>Drift has no accounts, analytics, advertising, tracking, app-operated backend, or third-party SDKs.</p>
+      <strong>Drift does not automatically transmit app data.</strong>
+      <p>Drift has no accounts, analytics, advertising, tracking, app-operated backend, or third-party SDKs. It does not sell data or collect data for the developer unless you deliberately share feedback.</p>
     </div>
 
     <h2>Bluetooth</h2>
-    <p>Bluetooth is used locally only to make the controller appear as an input device to another device you choose. Drift cannot read content or activity from that target.</p>
+    <p>Bluetooth is used locally only to make the controller appear as an input device to another device you choose. HID characteristics request OS-provided Bluetooth encryption. Drift cannot identify the target or read its content or activity.</p>
 
     <h2>On-device preferences</h2>
-    <p>Drift stores onboarding completion, selected target type, whether this installation has ever connected to a target, and your compatibility-result choices on this device. The connection flag is used only to choose first-pair versus reconnect guidance. Deleting Drift deletes these preferences.</p>
+    <p>Drift stores onboarding completion, selected target type, whether this installation has ever connected to a target, and your compatibility-result choices on this device. It also stores the physical Test Report you choose to fill in: controller and target class and numeric OS version, fresh or returning association, Apple Account observation, workflow results, and bounded optional video-app and adapter/TV text. This information is stored only on this controller. Resetting the report clears it, and deleting Drift deletes these preferences and the report.</p>
+
+    <h2>Diagnostics</h2>
+    <p>Automatic diagnostics are bounded and kept in memory. They describe Bluetooth state, connection epochs and generations, subscribed roles, baseline state, and recent lifecycle events. They do not contain a device name, Bluetooth central identifier, Apple Account identifier, or target content. Clear Diagnostics erases the in-memory history.</p>
+
+    <h2>Sharing from Drift</h2>
+    <p>Share Test Report and Share Diagnostics create a local preview and open the system share sheet. Nothing leaves Drift unless you choose a destination. The recipient and selected provider can access what you send. They handle it under their own privacy terms. Review optional report text before sharing it.</p>
 
     <h2>Voluntary beta feedback</h2>
-    <p>If you send TestFlight feedback or email, Apple or your email provider transmits that message to the developer outside the Drift app. It may contain details you choose to provide, including controller and target model, OS version, video app, adapter and TV, control results, reconnect behavior, screenshots, contact address, and message content.</p>
-    <p>Only the developer can access this feedback. It is used solely to diagnose Drift and assess compatibility, retained only as long as needed for that purpose, then deleted. You may request deletion at <a href="mailto:ari@mendelow.me">ari@mendelow.me</a>.</p>
+    <p>If you use the system share sheet, send TestFlight feedback, or email, Apple or your chosen provider transmits that message outside the Drift app. It may contain details you choose to provide, including controller and target class and OS version, video app, adapter and TV, control results, reconnect behavior, diagnostics, screenshots, contact address, and message content.</p>
+    <p>Feedback you send to the developer can be accessed by the developer. The developer uses it solely to diagnose Drift and assess compatibility, retains it only as long as needed for that purpose, then deletes it. You may request deletion at <a href="mailto:ari@mendelow.me">ari@mendelow.me</a>.</p>
     <p>TestFlight and its feedback transport are provided by Apple and subject to <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>. Email is subject to your and the developer’s email providers.</p>
 
     <h2>Contact</h2>
